@@ -14,7 +14,7 @@ const Produtos = ({ navigation }) => {
             <View> 
                 <Button title="Home" onPress={() => navigation.navigate('Home')}  />
                 <Button title="Sobre" onPress={() => navigation.navigate('Sobre')}  />
-                <Button title="Produtos" onPress={() => navigation.navigate('Produtos')}  />
+                <Button title="Produtos" onPress={() => navigation.navigate('Produtos')}  />  
             </View>
 
             <View style={styles.main}>
