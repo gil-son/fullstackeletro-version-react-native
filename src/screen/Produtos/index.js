@@ -1,6 +1,6 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, ImageBackground, StyleSheet, Button, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, ImageBackground, StyleSheet, Button, TouchableOpacity, TextInput, Platform } from 'react-native';
 import Login from '../../components/Login';
 
 
@@ -101,7 +101,7 @@ export default Produtos;
 const styles = StyleSheet.create({
     container: {
 
-        backgroundImage: 'linear-gradient(#575787, #000)',
+        backgroundImage: Platform.OS === 'web' ? 'linear-gradient(#575787, #000)' : '#000',
         width: '100%',
         // justifyContent: 'center',
         // alignItems: 'center',
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Comic Sans MS',
         justifyContent: 'space-around',
         alignItems: 'center',
-        height: '3700px',
+        height: 3700,
     },
     categoria: {
         marginTop: 20,
