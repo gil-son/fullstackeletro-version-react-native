@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 
 
 const styles = StyleSheet.create({
     container: {
         
-        backgroundImage: 'linear-gradient(#575787, #000)',
+        backgroundImage: Platform.OS === 'web' ? 'linear-gradient(#575787, #000)' : '#000',
         width: '100%',
         height: '100%',
         // justifyContent: 'center',
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         fontFamily:'Comic Sans MS',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '500px',
+        height: 500,
     },
     footer:{
         justifyContent: 'center',
