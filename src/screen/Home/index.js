@@ -9,7 +9,8 @@ import {
     Image,
     TextInput,
     TouchableOpacity,
-    StatusBar
+    StatusBar,
+    Platform
 } from 'react-native';
 
 
@@ -99,7 +100,7 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundImage: 'linear-gradient(#575787, #000)',
+        backgroundImage: Platform.OS === 'web' ? 'linear-gradient(#575787, #000)' : '#000',
         width: '100%',
         height: '100%',
         flexDirection: 'column',
@@ -176,7 +177,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         width: '100%',
-        height: '120px',
+        height: 120,
         flexDirection: 'row'
 
     },
