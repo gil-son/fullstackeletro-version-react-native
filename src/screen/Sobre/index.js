@@ -40,7 +40,7 @@ const Sobre = ({navigation}) => {
                 
                 <View style={styles.box1}>
                     <Text style={styles.texto}>
-                        Essa jornada tem o período de 6 meses. Ao final você sai com bastante experiência, amigos e um emprego!
+                        Essa jornada tem o período de 6 meses. Ao final você sai com bastante experiência, amigos e um emprego \o/!
                     </Text>
                 </View>
                 
