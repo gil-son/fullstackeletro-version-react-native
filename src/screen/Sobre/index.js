@@ -33,7 +33,7 @@ const Sobre = ({navigation}) => {
 
                 <View style={styles.box1}>
                     <Text style={styles.texto}>
-                        Uma iniciativa que busca dar oportunidade à pessoas que não tem nenhuma vínculo com a tecnologia
+                        Uma iniciativa que busca dar oportunidade às pessoas que não tem nenhuma vínculo com a tecnologia
                         ou tem algum conhecimento.
                     </Text>
                 </View>
